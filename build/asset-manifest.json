@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0b100c19.css",
+    "main.js": "/static/js/main.e4fed8cd.js",
+    "static/js/453.258b012d.chunk.js": "/static/js/453.258b012d.chunk.js",
+    "static/media/Home.png": "/static/media/Home.8e09118500ea1f994f18.png",
+    "static/media/loginbackground.jpeg": "/static/media/loginbackground.6c442e5bdc9a64391f3a.jpeg",
+    "static/media/loginback.jpeg": "/static/media/loginback.1d29d38bcaca0e4af876.jpeg",
+    "static/media/Meeting.png": "/static/media/Meeting.36317e1c6eb62cae9068.png",
+    "static/media/login-page.png": "/static/media/login-page.65ae82d2f519d3b9fe4b.png",
+    "static/media/uploadIcon.png": "/static/media/uploadIcon.a76a22b26412483729a2.png",
+    "static/media/close.png": "/static/media/close.2aa1b2c192784dade826.png",
+    "static/media/logomini.png": "/static/media/logomini.41a50ca89c9454b371a9.png",
+    "static/media/manager.png": "/static/media/manager.8cd045cfd8042ab4c892.png",
+    "static/media/delete.png": "/static/media/delete.f5561e87f3ee478d1b4e.png",
+    "static/media/empty-folder.png": "/static/media/empty-folder.f531b8220b7f97b1a7e5.png",
+    "static/media/hirefleX247.com-dark.png": "/static/media/hirefleX247.com-dark.4a12a4e52cdeaf27a102.png",
+    "static/media/check.png": "/static/media/check.b6d4c00e2d6f66909f85.png",
+    "static/media/import.png": "/static/media/import.1022d5869b9731e44630.png",
+    "static/media/bulk-import.png": "/static/media/bulk-import.57d3c4dab7cbd11ca590.png",
+    "static/media/xlsx.png": "/static/media/xlsx.b2d968b71b650a881951.png",
+    "static/media/query.png": "/static/media/query.d94632e7d14af5a78dec.png",
+    "static/media/profile.png": "/static/media/profile.ad9bcdcf2734957daca0.png",
+    "static/media/add.png": "/static/media/add.3140919037b5281d614a.png",
+    "static/media/company-policies.png": "/static/media/company-policies.a5971be5f296161df69c.png",
+    "static/media/time-off-request.png": "/static/media/time-off-request.1d768e782e389a9f9084.png",
+    "index.html": "/index.html",
+    "main.0b100c19.css.map": "/static/css/main.0b100c19.css.map",
+    "main.e4fed8cd.js.map": "/static/js/main.e4fed8cd.js.map",
+    "453.258b012d.chunk.js.map": "/static/js/453.258b012d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0b100c19.css",
+    "static/js/main.e4fed8cd.js"
+  ]
+}
