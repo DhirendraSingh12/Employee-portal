@@ -1,0 +1,742 @@
+.personal-info-page {
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f6f8;
+    height: fit-content;
+}
+
+.personal-info-container {
+    padding: 20px;
+}
+
+.personal-info-card {
+    display: flex;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.personal-info-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-delete-btn {
+    margin-left: 22px;
+    display: flex;
+}
+
+.personal-info-details {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.personal-info-name {
+    margin-left: 22vh;
+    font-size: 1.8rem;
+    margin-top: -16vh;
+    color: #1976d2;
+}
+
+.personal-info-role {
+    margin-left: 22vh;
+}
+
+.personal-info-contact {
+    margin-top: 6.5vh;
+}
+
+.personal-info-contact a {
+    color: #1976d2;
+    margin-left: 6px;
+}
+
+.personal-info-contact span {
+    margin-left: 6px;
+}
+
+.personal-info-status-section {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.personal-info-status {
+    background-color: #1976d2a3;
+    margin-top: 12px;
+    padding: 7px;
+    margin-left: 20px;
+}
+
+.profile-tabs-container {
+    margin-top: 20px;
+}
+
+.profile-tabs {
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.profile-tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.profile-tab.active {
+    border-bottom: 3px solid #1976d2;
+    color: #1976d2;
+}
+
+.absence-section {
+    margin-top: 20px;
+    display: contents;
+}
+
+.filter-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+    padding: 5px;
+}
+
+.absence-filter,
+.leave-year-filter {
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+}
+
+.absence-header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 12px;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.profile-absence-summary {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.profile-annual-leave {
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    width: 25%;
+}
+
+.profile-absence-item {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 25%;
+}
+
+.overtime-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.overtime-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.overtime-header h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.profile-edit-btn,
+.profile-clear-btn {
+    margin-top: 10px;
+}
+
+.upload-button,
+.new-folder-button,
+.create-report-button {
+    margin: 5px;
+}
+
+.info-edit-btn {
+    margin-left: 96%;
+    margin-top: 5px;
+}
+
+.employment-info-edit-btn {
+    margin-left: 90%;
+}
+
+.pension-eligible-yes-btn,
+.pension-eligible-no-btn {
+    margin-left: 5%;
+}
+
+.pension-save-btn,
+.pension-cancel-btn {
+    margin: 5px;
+}
+
+.bank-detail-save-btn,
+.bank-detail-cancel-btn {
+    margin-left: 7px;
+}
+
+.log-overtime-btn,
+.use-toil-btn,
+.emergency-button,
+.profile-add-btn,
+.profile-list-btn,
+.profile-add-leave-btn,
+.profile-edit-btn,
+.profile-clear-btn,
+.document-search-button,
+.download-button,
+.upload-button,
+.new-folder-button,
+.create-report-button,
+.info-edit-btn,
+.employment-info-edit-btn,
+.pension-eligible-yes-btn,
+.pension-eligible-no-btn,
+.pension-save-btn,
+.pension-cancel-btn,
+.bank-detail-save-btn,
+.bank-detail-cancel-btn,
+.note-save-btn,
+.note-cancel-btn {
+    background-color: #1976d2b4;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.log-overtime-btn:hover,
+.use-toil-btn:hover,
+.emergency-button:hover,
+.profile-add-btn:hover,
+.profile-list-btn:hover,
+.profile-add-leave-btn:hover,
+.profile-edit-btn:hover,
+.profile-clear-btn:hover,
+.document-search-button:hover,
+.download-button:hover,
+.upload-button:hover,
+.new-folder-button:hover,
+.create-report-button:hover,
+.info-edit-btn:hover,
+.employment-info-edit-btn:hover,
+.pension-eligible-yes-btn:hover,
+.pension-eligible-no-btn:hover,
+.pension-save-btn:hover,
+.pension-cancel-btn:hover,
+.bank-detail-save-btn:hover,
+.bank-detail-cancel-btn:hover,
+.note-save-btn:hover,
+.note-cancel-btn:hover {
+    border: 2px solid #1976d260;
+    color: #fff;
+    background-color: #0073e6;
+}
+
+.overtime-sections {
+    display: flex;
+    justify-content: space-between;
+}
+
+.overtime-sections title {
+    background-color: #1976d2;
+}
+
+.section {
+    background-color: #f0f8ff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 48%;
+}
+
+.overtime-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.overtime-details div {
+    text-align: center;
+}
+
+.overtime-details p {
+    margin: 5px 0;
+}
+
+.overtime-details h3 {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.accordion-section {
+    margin-top: 20px;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+}
+
+.accordion-button {
+    background-color: #f8f9fa;
+    color: #000;
+    border: 1px solid #ddd;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    justify-content: space-between;
+    display: flex;
+}
+
+.accordion-content {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+}
+
+.contact-info-section {
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    padding: 7px;
+    background-color: #f9fcff;
+}
+
+.contact-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.contact-header:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown-icon {
+    margin-left: 10px;
+    font-size: 1rem;
+    color: #0073e6;
+}
+
+.contact-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.info-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-group div {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-label {
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 5px;
+    /* Space between the label and value */
+}
+
+.info-value {
+    color: #777;
+    margin-left: 0;
+    /* Ensure values align directly under the labels */
+}
+
+.medical-textarea {
+    border: 1px solid black;
+    height: 15vh;
+    width: auto;
+    padding: 10px;
+}
+
+.emergency-container {
+    display: contents;
+}
+
+.emergency-alert-message {
+    padding: 10px 0px 0px 20px;
+}
+
+
+.my-documents {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.breadcrumb {
+    font-size: 14px;
+    color: #666;
+}
+
+.separator {
+    margin: 0 0.5rem;
+}
+
+.search-bar {
+    display: flex;
+}
+
+.search-bar input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 2rem;
+    text-align: center;
+}
+
+.empty-folder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.icon {
+    /* Add your icon styles here */
+}
+
+.footer {
+    padding: 1rem;
+    border-top: 1px solid #ccc;
+}
+
+.main-employment-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns of equal width */
+    grid-auto-rows: auto;
+    /* Rows adjust automatically based on content */
+    grid-gap: 1rem;
+    /* Adds space between grid items */
+}
+
+.employment-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Grid for General Info */
+.employment-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.employment-info-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.employment-info-label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.employment-info-value {
+    color: #666;
+}
+
+.employment-info-inline {
+    margin-left: 20px;
+    font-weight: normal;
+    color: #999;
+}
+
+/* Table for Contract Summary */
+.employment-contract-summary {
+    width: 50%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.employment-contract-summary-header {
+    text-align: left;
+    font-weight: bold;
+    color: #000;
+    padding-bottom: 10px;
+    background-color: none;
+}
+
+.employment-contract-summary td {
+    padding: 12px 15px;
+}
+
+.payroll-input-field {
+    padding: 7px;
+    margin-left: 45%;
+    border: 1px solid;
+    border-radius: 3px;
+}
+
+.payroll-heading {
+    padding: 5px;
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+
+.payroll-pension {
+    padding: 2px;
+    font-size: 1.5rem;
+}
+
+.pension-save-cancel-container {
+    padding: 5px;
+    margin-top: 12px;
+}
+
+
+
+.pension-save-btn:hover,
+.pension-cancel-btn:hover {
+    opacity: 0.8;
+}
+
+.all-placeholder {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    /* Adds space between fields */
+}
+
+.bank-search-number {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 16px;
+    /* Adds space between the label and input */
+}
+
+.bank-search-number label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    /* Adds space below the label */
+}
+
+.bank-input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.bank-input-field:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.bank-detail-save {
+    margin: 5px;
+    padding: 5px;
+    margin-left: -10px;
+}
+
+.contact-info-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.contact-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-header span {
+    transition: color 0.3s ease;
+}
+
+.contact-header:hover span {
+    color: #007bff;
+}
+
+.dropdown-icon {
+    font-size: 16px;
+}
+
+.dropdown-icon.open {
+    transform: rotate(180deg);
+}
+
+.employment-container {
+    margin-top: 15px;
+}
+
+.note-area {
+    margin-bottom: 20px;
+}
+
+.note-textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: none;
+}
+
+.note-action-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+/* From Uiverse.io by JkHuger */
+.on-check-button {
+    display: block;
+    margin-bottom: 1.5em;
+    font-size: 1em;
+}
+
+.on-check-button {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 0.75em;
+    box-shadow: 0.125em 0.125em 0 0.125em rgba(0, 0, 0, 0.3) inset;
+    color: #e91e63;
+    display: inline-flex;
+    align-items: center;
+    margin: auto;
+    padding: 0.15em;
+    width: 3em;
+    height: 1.5em;
+    transition: background-color 0.1s 0.3s ease-out, box-shadow 0.1s 0.3s ease-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.on-check-button:before,
+.on-check-button:after {
+    content: "";
+    display: block;
+}
+
+.on-check-button:before {
+    background-color: #d7d7d7;
+    border-radius: 50%;
+    width: 1.2em;
+    height: 1.2em;
+    transition: background-color 0.1s 0.3s ease-out, transform 0.3s ease-out;
+    z-index: 1;
+}
+
+.on-check-button:after {
+    background: linear-gradient(transparent 50%, rgba(0, 0, 0, 0.15) 0) 0 50% / 50% 100%,
+        repeating-linear-gradient(90deg, #bbb 0, #bbb, #bbb 20%, #999 20%, #999 40%) 0 50% / 50% 100%,
+        radial-gradient(circle at 50% 50%, #888 25%, transparent 26%);
+    background-repeat: no-repeat;
+    border: 0.25em solid transparent;
+    border-left: 0.4em solid #d8d8d8;
+    border-right: 0 solid transparent;
+    transition: border-left-color 0.1s 0.3s ease-out, transform 0.3s ease-out;
+    transform: translateX(-22.5%);
+    transform-origin: 25% 50%;
+    width: 1.2em;
+    height: 1em;
+    box-sizing: border-box;
+}
+
+/* Checked */
+.on-check-button:checked {
+    background-color: rgba(0, 0, 0, 0.45);
+    box-shadow: 0.125em 0.125em 0 0.125em rgba(0, 0, 0, 0.1) inset;
+}
+
+.on-check-button:checked:before {
+    background-color: currentColor;
+    transform: translateX(125%);
+}
+
+.on-check-button:checked:after {
+    border-left-color: currentColor;
+    transform: translateX(-2.5%) rotateY(180deg);
+}
+
+/* Other States */
+.on-check-button:focus {
+    /* Usually an anti-A11Y practice but set to remove an annoyance just for this demo */
+    outline: 0;
+}

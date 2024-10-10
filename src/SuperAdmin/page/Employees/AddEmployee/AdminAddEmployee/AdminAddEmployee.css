@@ -1,0 +1,500 @@
+.admin-add-employee {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.emp-content-container {
+  padding: 20px;
+  background-color: #f5f6f8;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.emp-actions-container {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.add-employee-btn {
+  background-color: #585082;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-employee-btn:hover {
+  background-color: #494074;
+}
+
+.add-employee-link {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
+
+.emp-filters-container {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.emp-filter-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.emp-filter-label {
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+
+.emp-filter-input,
+.emp-filter-select,
+.emp-sort-select,
+.emp-status-select {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 27vh;
+}
+
+.emp-teams-section {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+}
+
+.emp-teams-section h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: left;
+}
+
+.emp-team-profiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:flex-start;
+  gap: 10px;
+}
+
+.emp-team-card {
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: calc(33.33% - 2px); /* Ensures 3 cards per row */
+  transition: transform 0.3s ease;
+  width: 450px;
+}
+
+.emp-team-card:hover {
+  transform: translateY(-5px);
+}
+
+.emp-team-profile {
+  display: flex;
+  align-items: center;
+  width: 450px;
+}
+
+.emp-team-profile-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.emp-team-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.emp-team-info h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  color: #333;
+}
+
+.emp-team-info .emp-role {
+  font-size: 14px;
+  color: #666;
+  margin: 5px 0;
+}
+
+/* Container for profile link and visibility icon */
+.emp-profile-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensure text is on the left and icon on the right */
+  width: 100%; /* Stretch the container across full width */
+  margin-top: 8px;
+}
+
+.emp-view-profile-container {
+  flex-grow: 1; /* Take up remaining space */
+}
+
+.emp-view-profile-link {
+  color: #ff007b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.visibility-icon {
+  color: #ff007b9e;
+  cursor: pointer;
+  margin-left: 150px; /* Optional: adjust for spacing */
+}
+
+.emp-status-text {
+  color: #888;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+
+.emp-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.emp-modal-content {
+  background: white;
+  padding: 20px;
+  width: 600px;
+  max-height: 80vh;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow-y: auto;
+}
+
+.emp-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #494074;
+  padding: 10px 15px;
+  color: white;
+  border-radius: 10px 10px 0 0;
+}
+
+.emp-modal-header h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.emp-modal-close-icon {
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.emp-modal-body {
+  display: flex;
+  gap: 20px;
+}
+
+.emp-modal-left {
+  flex: 0 0 auto;
+}
+
+.emp-modal-right {
+  flex: 1;
+}
+
+.emp-modal-profile-img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.emp-modal-right h3 {
+  font-size: 24px;
+  font-family: 'Cambria', serif;
+  color: rgb(0, 87, 173);
+  margin: 0 0 10px;
+}
+
+.emp-modal-right p {
+  font-family: 'Cambria', serif;
+  margin: 5px 0;
+}
+
+.emp-team-details {
+  margin-top: 20px;
+  font-weight: bold;
+  margin-left: -120px;
+}
+
+.emp-contact-details {
+  margin-top: 20px;
+  margin-left: -120px;
+}
+
+.emp-contact-email {
+  color: rgb(0, 87, 173);
+}
+
+.icon {
+  margin-right: 8px;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+.emp-reports {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+
+
+/* For desktops up to 1200px */
+@media (max-width: 1200px) {
+  .emp-filter-input,
+  .emp-filter-select,
+  .emp-sort-select,
+  .emp-status-select {
+    width: 20vh;
+  }
+
+  .emp-team-card {
+    width: calc(50% - 10px); /* Two cards per row */
+  }
+
+  .emp-team-profile-img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .emp-modal-content {
+    width: 80%;
+    height: auto;
+  }
+
+  .emp-contact-details {
+    margin-left: 0;
+  }
+}
+
+/* For tablets and smaller devices (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .emp-filter-input,
+  .emp-filter-select,
+  .emp-sort-select,
+  .emp-status-select {
+    width: auto;
+  }
+
+  .emp-team-card {
+    width: 100%; /* Two cards per row */
+  }
+
+  .emp-team-profile-img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .emp-modal-content {
+    width: 80%;
+    height: auto;
+  }
+
+  .emp-contact-details {
+    margin-left: 0;
+  }
+}
+
+/* For medium tablets and screens (max-width: 975px) */
+@media (max-width: 975px) {
+  .emp-filter-input,
+  .emp-filter-select,
+  .emp-sort-select,
+  .emp-status-select {
+    width: auto;
+  }
+
+  .emp-team-card {
+    width: auto; /* One card per row */
+  }
+
+  .add-employee-btn {
+    width: 100%;
+  }
+
+  .emp-profile-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Text on left, icon on right */
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  .visibility-icon {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .emp-team-profile-img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .emp-modal-content {
+    width: 90%;
+    height: auto;
+  }
+
+  .emp-modal-body h3 {
+    margin-left: 0;
+    font-size: 30px;
+  }
+
+  .emp-contact-details {
+    margin-left: 0;
+    margin-top: 50px;
+  }
+}
+
+/* For mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .emp-filter-input,
+  .emp-filter-select,
+  .emp-sort-select,
+  .emp-status-select {
+    width: 100%; /* Full width on mobile */
+  }
+
+  .emp-team-card {
+    width: 100%; /* One card per row */
+  }
+
+  .add-employee-btn {
+    width: 100%;
+  }
+
+  .emp-profile-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Text on left, icon on right */
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  .visibility-icon {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .emp-team-profile-img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .emp-modal-content {
+    width: 90%;
+    height: auto;
+  }
+
+  .emp-modal-body h3 {
+    margin-left: 0;
+    font-size: 30px;
+  }
+
+  .emp-contact-details {
+    margin-left: 0;
+    margin-top: 50px;
+  }
+
+ 
+}
+
+/* For small mobile devices (max-width: 400px) */
+@media (max-width: 450px) {
+  .emp-filter-input,
+  .emp-filter-select,
+  .emp-sort-select,
+  .emp-status-select {
+    width: 100%; /* Full width for small screens */
+    font-size: 14px; /* Reduce font size for smaller screens */
+  }
+
+  .emp-team-card {
+    width: 100%; /* One card per row */
+    margin: 0 0 15px 0; /* Add some spacing between cards */
+  }
+
+
+  .add-employee-btn {
+    width: 100%; /* Full width for better touch usability */
+    font-size: 16px; /* Ensure the button text is readable */
+  }
+
+  .emp-profile-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensure text and icon alignment */
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  .visibility-icon {
+    margin-left: auto; /* Automatically align icon to the right */
+  }
+
+  .emp-team-profile-img {
+    width: 40px; /* Smaller image for smaller screens */
+    height: 40px;
+  }
+
+}
+
+
+@media screen and (max-width: 768px) {
+  .emp-modal-content {
+    width: 90%;
+    height: auto;
+  }
+
+  .emp-modal-body {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .emp-modal-body img {
+    margin-bottom: 5px;
+  }
+
+  .emp-modal-body h3, .emp-modal-body p {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .emp-team-details{
+    margin-left: 60px;
+    margin-bottom: -40px;
+  }
+}
